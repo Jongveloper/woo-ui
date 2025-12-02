@@ -1,0 +1,10 @@
+{
+  "projectId": "UPDATE_WITH_YOUR_PROJECT_ID",
+  "buildScriptName": "build:storybook",
+  "exitZeroOnChanges": true,
+  "exitOnceUploaded": true,
+  "onlyChanged": true,
+  "autoAcceptChanges": "main",
+  "ignoreLastBuildOnBranch": "main"
+}
+

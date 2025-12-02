@@ -1,0 +1,62 @@
+# 소스 파일 (빌드된 파일만 배포)
+src/
+
+# 설정 파일
+tsconfig.json
+eslint.config.js
+postcss.config.cjs
+rollup.config.js
+vitest.config.ts
+vitest.setup.ts
+vitest-env.d.ts
+
+# Storybook (배포 불필요)
+.storybook/
+*.stories.tsx
+*.stories.ts
+storybook-static/
+STORYBOOK.md
+
+# shadcn/ui CLI 설정 (배포 불필요)
+components.json
+
+# Workspace (단일 패키지, 불필요)
+pnpm-workspace.yaml
+
+# 테스트 파일
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+__tests__/
+
+# Scripts
+scripts/
+
+# Git
+.git/
+.gitignore
+
+# 환경 파일
+.env
+.env.*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 로그
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# 의존성
+node_modules/
+
+# 기타
+.DS_Store
+coverage/
+.cache/

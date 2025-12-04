@@ -36,7 +36,17 @@
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
-    "prepublishOnly": "pnpm run typecheck && pnpm run lint && pnpm run test && pnpm run build"
+    "prepublishOnly": "pnpm run typecheck && pnpm run lint && pnpm run test && pnpm run build",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write"
+    ]
   },
   "peerDependencies": {
     "react": "^18.0.0",
@@ -83,6 +93,7 @@
     "eslint-plugin-storybook": "^0.11.1",
     "http-server": "^14.1.1",
     "jsdom": "^25.0.1",
+    "lint-staged": "^16.2.7",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
     "react": "^18.3.1",
